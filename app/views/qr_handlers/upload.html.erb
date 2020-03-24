@@ -1,0 +1,5 @@
+<%= form_tag "/decode" ,multipart: true do %>
+  <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+   <label for="file">File to Upload</label> <%= file_field_tag "file" %>
+  <%= submit_tag %>
+<% end %>
